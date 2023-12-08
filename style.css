@@ -1,0 +1,223 @@
+/* Default styles for larger screens (desktop-first) */
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color : black;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.recom-title {
+  color : #13A549;
+  text-align: center;
+  font-size: 18px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  column-gap: 35px;
+  margin-bottom: 200px;
+}
+
+.first-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  margin-left: 45px;
+}
+
+.second-grid, 
+.third-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 35px;
+  margin-right: 45px;
+}
+
+.item-description {
+  color: grey;
+}
+
+.firstgrid-img-container {
+  height: 450px;
+  width: 450px;
+  overflow: hidden;
+}
+
+.first-grid-img {
+  width: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.images-container {
+  height: 237px;
+  width: 330;
+  overflow: hidden;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+p {
+  color: grey;
+}
+
+.order-button {
+  color: white;
+  background-color: #13A549;
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+.floating-iphone {
+  height: 700px;
+  padding-left: 80px;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.download {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+.download-info {
+  
+  padding: 90px;
+}
+.download-title {
+  font-size: 40px;
+  text-align: left;
+}
+.download-description {
+  line-height: 24px;
+}
+
+.serial-num {
+  background-color: #13A549;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  padding: 10px;
+  border-radius: 25px;
+  margin-right: 20px;
+}
+
+.download-steps {
+  display: grid;
+  row-gap: 20px; 
+  padding-top: 20px; 
+  padding-bottom: 30px;
+}
+
+.download-place {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.our-test {
+  text-align: center;
+  color:#13A549;
+}
+
+.symbol {
+  font-size: 58px;
+  font-weight: 600;
+  text-align: center;
+  color:aliceblue;
+  
+}
+
+.test {
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 27px;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+.saka-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  width: 80px;
+  margin: auto;
+}
+
+.saka {
+  border-radius: 240px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.test-desig {
+  text-align: center;
+  margin-top: -14px ;
+}
+.test-name {
+  text-align: center;
+  color: black;
+  font-size: 20px;
+}
+
+@keyframes floating-iphone {
+  from { transform: translate(0,  0px); }
+  65%  { transform: translate(0, 15px); }
+  to   { transform: translate(0, -0px); }    
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .images-container {
+    width: 505px;
+  }
+
+  .second-grid, 
+  .third-grid{
+    margin-left: 45px;
+  }
+
+  .download {
+    grid-template-columns: 1fr;
+  }
+
+  .second-grid {
+    padding-bottom: 35px;
+  }
+
+  .first-grid {
+    column-gap: 35px;
+    padding-bottom: 35px;
+  }
+
+  .floating-iphone {
+    height: 500px;
+  }
+
+  .first-first {
+    padding-bottom: 35px;
+  }
+}
+
+
